@@ -39,9 +39,12 @@ export function clusterName(cluster: Cluster): string {
     }
 }
 
-export const MAINNET_BETA_URL = 'https://api.mainnet-beta.solana.com';
-export const TESTNET_URL = 'https://api.testnet.solana.com';
-export const DEVNET_URL = 'https://api.devnet.solana.com';
+// export const MAINNET_BETA_URL = 'https://api.mainnet-beta.solana.com';
+// export const TESTNET_URL = 'https://api.testnet.solana.com';
+// export const DEVNET_URL = 'https://api.devnet.solana.com';
+export const MAINNET_BETA_URL = 'http://125.141.199.116:8899';
+export const TESTNET_URL = 'http://125.141.199.116:8899';
+export const DEVNET_URL = 'http://125.141.199.116:8899';
 
 export function clusterUrl(cluster: Cluster, customUrl: string): string {
     const modifyUrl = (url: string): string => {
@@ -64,4 +67,5 @@ export function clusterUrl(cluster: Cluster, customUrl: string): string {
     }
 }
 
-export const DEFAULT_CLUSTER = Cluster.MainnetBeta;
+// TODO: launching
+export const DEFAULT_CLUSTER = Cluster.Devnet;
